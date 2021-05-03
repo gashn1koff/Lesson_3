@@ -1,0 +1,69 @@
+* {
+    font-size: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.car {
+    height: 300px;
+    width: 250px;
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+
+.rectangle {
+    background-color: green;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+}
+
+.rectangle-roof{
+    background-color:yellow;
+    height: 150px;
+    width: 100px;
+    border-radius: 20%;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    z-index: 3;
+}
+
+.circle {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.circles div:nth-child(1) {
+    top: -50px;
+    left: -50px;
+}
+
+.circles div:nth-child(2) {
+    top: 250px;
+    left: -50px;
+}
+
+.circles div:nth-child(3) {
+    top: 250px;
+    left: 200px;
+}
+
+.circles div:nth-child(4) {
+    top: -50px;
+    left: 200px;
+}
+
+.circles div:hover {
+    z-index: 4;
+}
+
+.rectangle:hover {
+    z-index: 4;
+}
